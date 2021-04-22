@@ -72,9 +72,23 @@ modules:
       - nsrisks.zip
       name: nsrisks
       target-path: resources/
+    - artifacts:
+      - nsmitigations.zip
+      name: nsmitigations
+      target-path: resources/
 - name: nsrisks
   type: html5
   path: app/risks
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: nsmitigations
+  type: html5
+  path: app/mitigations
   build-parameters:
     build-result: dist
     builder: custom
