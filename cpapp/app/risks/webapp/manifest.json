@@ -26,14 +26,14 @@
         },
         "crossNavigation": {
             "inbounds": {
-              "Risks-display": {
-                "signature": {
-                  "parameters": {},
-                  "additionalParameters": "allowed"
-                },
-                "semanticObject": "Risks",
-                "action": "display"
-              }
+                "Risks-display": {
+                    "signature": {
+                        "parameters": {},
+                        "additionalParameters": "allowed"
+                    },
+                    "semanticObject": "Risks",
+                    "action": "display"
+                }
             }
         }
     },
@@ -146,5 +146,5 @@
     "sap.cloud": {
         "public": true,
         "service": "cpapp.service"
-      }
+    }
 }
